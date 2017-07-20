@@ -71,7 +71,7 @@ public class RadarView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        radius = Math.min(h, w) / 2 * 0.8f;
+        radius = Math.min(h, w) / 2 * 0.8f;//根据项目中需求修改半径
         //中心坐标
         centerX = w / 2;
         centerY = h / 2;
@@ -80,7 +80,7 @@ public class RadarView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        
+
         initData();
 
         mainPaint = new Paint();
@@ -106,7 +106,6 @@ public class RadarView extends View {
         valuePaint.setStyle(Paint.Style.FILL_AND_STROKE);
 
         valuePaint.setColor(valuePaintColor);
-        valuePaint.setAlpha(valuePaintAlpha);
 
         drawRegion(canvas);
     }
@@ -317,7 +316,7 @@ public class RadarView extends View {
         }
         valuePaint.setStyle(Paint.Style.STROKE);
         canvas.drawPath(path, valuePaint);
-        valuePaint.setAlpha(127);
+        valuePaint.setAlpha(valuePaintAlpha);
         //绘制填充区域
         valuePaint.setStyle(Paint.Style.FILL_AND_STROKE);
         canvas.drawPath(path, valuePaint);

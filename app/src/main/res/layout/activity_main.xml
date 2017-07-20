@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.radarview.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.radarview.RadarView
+            android:id="@+id/default_rview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp400" />
+
+        <com.radarview.RadarView
+            android:id="@+id/rview1"
+            app:mPaintColor="@color/colorAccent"
+            app:mPaintStrokeWidth="6"
+            app:textPaintColor="@color/colorAccent"
+            app:textPaintStrokeWidth="6"
+            app:textPaintTextSize="50"
+            app:valuePaintAlpha="60"
+            app:valuePaintColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp400" />
+
+        <com.radarview.RadarView
+            android:id="@+id/rview2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp400" />
+
+    </LinearLayout>
+</ScrollView>

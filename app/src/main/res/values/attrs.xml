@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--//雷达图-->
+    <!--mainPaint                               //雷达区画笔-->
+    <!--private Paint valuePaint;               //数据区画笔-->
+    <!--private Paint textPaint;                //文本画笔-->
+    <declare-styleable name="RadarView">
+        <attr name="mPaintColor" format="color"/>
+        <attr name="mPaintStrokeWidth" format="integer"/>
+
+        <attr name="textPaintColor" format="color"/>
+        <attr name="textPaintStrokeWidth" format="integer"/>
+        <attr name="textPaintTextSize" format="integer"/>
+
+        <attr name="valuePaintColor" format="color"/>
+        <attr name="valuePaintAlpha" format="integer"/>
+    </declare-styleable>
+</resources>

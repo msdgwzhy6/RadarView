@@ -4,7 +4,7 @@
 
 装逼必备图
 
-![效果图](/images/RadarView.png)
+![效果图](https://github.com/madreain/AndroidNotes/blob/master/images/RadarView.png)
 
 具体实现思路
 

@@ -71,7 +71,7 @@ public class RadarView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        radius = Math.min(h, w) / 2 * 0.9f;
+        radius = Math.min(h, w) / 2 * 0.8f;
         //中心坐标
         centerX = w / 2;
         centerY = h / 2;
@@ -80,10 +80,7 @@ public class RadarView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
-//        moveTo、 setLastPoint、 lineTo 和 close
-//        addXxx与arcTo
-//        isEmpty、 isRect、isConvex、 set 和 offset
+        
         initData();
 
         mainPaint = new Paint();
